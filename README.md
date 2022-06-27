@@ -4,8 +4,9 @@ A Basic Parser for C# with both the source code and a .dll binary in releases se
 # Usage
 
 ```csharp
+using VeryBasicParser;
 
-VeryBasicParser parser = new VeryBasicParser(path,seperatorchar);
+VBasicParser parser = new VBasicParser(path,seperatorchar);
 ```
 ## Example text file (config.cfg)
 
@@ -15,8 +16,9 @@ samplerate=48000
 ```
 ## In your project:
 ```csharp
+using VeryBasicParser;
 
-VeryBasicParser parser = new VeryBasicParser("config.cfg",'=');
+VBasicParser parser = new VBasicParser("config.cfg",'=');
 
 string bitrate = parser.keyValues["bitrate"];
 
