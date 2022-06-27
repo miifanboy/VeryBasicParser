@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VeryBasicParser
 {
-    public class VeryBasicParser
+    public class VBasicParser
     {
         /// <summary>
         /// The object that stores key and value pairs.
@@ -18,7 +18,7 @@ namespace VeryBasicParser
         /// </summary>
         /// <param name="filepath">File path to the text file to parse.</param>
         /// <param name="seperator">The character used to seperate your keys with their values</param>
-        public VeryBasicParser(string filepath,char seperator)
+        public VBasicParser(string filepath,char seperator)
         {
             foreach(string value in File.ReadAllLines(filepath))
             {
